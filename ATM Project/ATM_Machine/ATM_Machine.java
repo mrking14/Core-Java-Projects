@@ -41,7 +41,7 @@ class ATM {
                 withdrawAmmount();
 
                 break;
-            case 4:
+            case 4: System.out.println("Thanks For Visiting......");
 
                 break;
 
@@ -64,6 +64,10 @@ class ATM {
             System.out.println("Your Balance is InSufficient!");
         }
         sc.close();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        menu();
 
     }
 
@@ -74,13 +78,22 @@ class ATM {
         System.out.println("You are Depositing " + amount + "/-");
         System.out.println("Your Total Amount is : " + (amount + balance));
         balance = balance + amount;
+        
         sc.close();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        menu();
 
     }
 
     private static void checkAcconutBalance() {
         System.out.println("Your Total Amount is : " + balance);
-        System.out.println("Thanks For Visiting......");
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        menu();
+        
     }
 
 }
